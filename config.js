@@ -158,9 +158,9 @@ function isCzechVersion() {
 // Get language-specific URL
 function getLanguageUrl(lang) {
     if (lang === 'en') {
-        return isEnglishVersion() ? window.location.href : window.location.href.replace(window.location.pathname, '/en/index.html');
+        return isEnglishVersion() ? window.location.href : 'https://post-trading.com';
     } else {
-        return isCzechVersion() ? window.location.href : window.location.href.replace('/en/', '/');
+        return isCzechVersion() ? window.location.href : 'https://uctujtrading.cz';
     }
 }
 
