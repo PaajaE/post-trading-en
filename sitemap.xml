@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main English page -->
+  <url>
+    <loc>https://www.post-trading.com/</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://www.uctujtrading.cz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.post-trading.com/"/>
+  </url>
+  
+  <!-- English page sections -->
+  <url>
+    <loc>https://www.post-trading.com/#services</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.post-trading.com/#target-audience</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.post-trading.com/#references</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.post-trading.com/#contact</loc>
+    <lastmod>2025-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+</urlset>
