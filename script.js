@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             };
             
             // Send email using EmailJS
-            window.emailjs.send('service_iqjdf2b', 'template_7nmscfu', templateParams)
+            window.emailjs.send('service_9nsxp5c', 'template_7nmscfu', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     const successMessage = config && config.form && config.form.success ? 
