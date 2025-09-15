@@ -59,13 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // reCAPTCHA validation
-            const recaptchaResponse = grecaptcha.getResponse();
-            if (!recaptchaResponse) {
-                const message = config && config.form && config.form.validation ? 
-                    config.form.validation.recaptcha : 'Please complete the reCAPTCHA verification.';
-                showNotification(message, 'error');
-                return;
-            }
+            // const recaptchaResponse = grecaptcha.getResponse();
+            // if (!recaptchaResponse) {
+            //     const message = config && config.form && config.form.validation ? 
+            //         config.form.validation.recaptcha : 'Please complete the reCAPTCHA verification.';
+            //     showNotification(message, 'error');
+            //     return;
+            // }
             
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         config.form.success : 'Thank you for your message! We will contact you as soon as possible.';
                     showNotification(successMessage, 'success');
                     contactForm.reset();
-                    grecaptcha.reset();
+                    // grecaptcha.reset();
                 }, function(error) {
                     console.log('FAILED...', error);
                     const errorMessage = config && config.form && config.form.error ? 

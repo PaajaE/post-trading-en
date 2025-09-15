@@ -1080,3 +1080,38 @@ body.menu-open {
         font-size: 0.9rem;
     }
 }
+
+/* Google Map Styles */
+.map-container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: var(--shadow);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive map */
+@media (max-width: 768px) {
+    .map-container {
+        margin-top: 1.5rem;
+    }
+    
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        height: 200px;
+    }
+}
