@@ -127,9 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctaButtons = document.querySelectorAll('.cta-button, .cta-button-large');
     ctaButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Use language-specific contact section ID
-            const contactId = config && config.language === 'en' ? '#contact' : '#kontakt';
-            const contactSection = document.querySelector(contactId);
+            // Use #contact for both versions
+            const contactSection = document.querySelector('#contact');
             if (contactSection) {
                 const navHeight = document.querySelector('nav').offsetHeight;
                 const targetPosition = contactSection.offsetTop - navHeight;
@@ -138,6 +137,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+            } else {
+                console.error('Contact section not found');
             }
         });
     });
